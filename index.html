@@ -1,0 +1,57 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Raksha Bandhan 💖</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Background music (starts only when box opens) -->
+  <audio id="background-music" loop>
+    <source src="music/sid.mp3" type="audio/mp3" />
+  </audio>
+
+  <!-- Transparent bro-sis logo (watermark) -->
+  <img src="nan.jpg" alt="Brother Sister Bond" class="bro-sis-logo" />
+
+  <!-- Falling images animation -->
+  <div id="falling-images"></div>
+
+  <header>
+    <h1 class="typewriter">Happy Birthday Nandhini(Nancy) 🎉</h1>
+  </header>
+
+  <!-- Your heartfelt message -->
+  <p>
+   You are very special to me. I hope your day is full of smiles, love, and happiness. May all your dreams come true today and always."
+  </p>
+
+  <!-- Reveal button -->
+  <button class="reveal-button" onclick="revealMemories()">Reveal Our Memories 💌</button>
+
+  <!-- Memories section -->
+  <div id="memory-gallery" class="hidden">
+    <p class="love-message">
+      My Friend 💖<br />These memories are forever etched in my heart.
+    </p>
+
+    <div class="memory-box" id="memoryBox">
+      <button class="reveal-button inner-button" onclick="openMemoryBox()">📦 Open My Gift Box</button>
+      <div class="scroller">
+        <!-- First set of images -->
+        <img src="images/ph1.jpg" /><img src="images/ph2.jpg" /><img src="images/ph3.jpg" />
+        <img src="images/ph4.jpg" /><img src="images/ph5.jpg" /><img src="images/ph6.jpg" />
+        
+        <!-- Duplicate for seamless loop -->
+        <img src="images/ph1.jpg" /><img src="images/ph2.jpg" /><img src="images/ph3.jpg" />
+        <img src="images/ph4.jpg" /><img src="images/ph5.jpg" /><img src="images/ph6.jpg" />
+       
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
